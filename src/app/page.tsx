@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white dark:bg-gray-950">
+    <main className="min-h-screen bg-white dark:bg-neutral-800">
       <div className="max-w-2xl mx-auto px-6 py-16">
         <h1 className="text-4xl font-bold mb-8 text-gray-900 dark:text-white">Ray Amjad</h1>
 
@@ -13,7 +13,7 @@ export default function Home() {
             Right now, I make videos on{" "}
             <a
               href="https://www.youtube.com/@ramjad"
-              className="text-blue-600 dark:text-blue-400 hover:underline"
+              className="text-blue-600 dark:text-gray-300 hover:underline dark:hover:text-white"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -22,7 +22,7 @@ export default function Home() {
             and apps under my own studio{" "}
             <a
               href="https://21dreams.org/"
-              className="text-blue-600 dark:text-blue-400 hover:underline"
+              className="text-blue-600 dark:text-gray-300 hover:underline dark:hover:text-white"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -43,7 +43,7 @@ export default function Home() {
             After finishing my Bachelor&apos;s, I was fortunate enough to get to work on my own projects. Firstly independently then within my studio{" "}
             <a
               href="https://21dreams.org/"
-              className="text-blue-600 dark:text-blue-400 hover:underline"
+              className="text-blue-600 dark:text-gray-300 hover:underline dark:hover:text-white"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -66,7 +66,7 @@ export default function Home() {
               <strong className="text-gray-900 dark:text-white">LinkedIn</strong>{" "}
               <a
                 href="https://www.linkedin.com/in/rayamjad/"
-                className="text-blue-600 dark:text-blue-400 hover:underline"
+                className="text-blue-600 dark:text-gray-300 hover:underline dark:hover:text-white"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -77,7 +77,7 @@ export default function Home() {
               <strong className="text-gray-900 dark:text-white">Instagram</strong>{" "}
               <a
                 href="https://instagram.com/theramjad"
-                className="text-blue-600 dark:text-blue-400 hover:underline"
+                className="text-blue-600 dark:text-gray-300 hover:underline dark:hover:text-white"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -88,7 +88,7 @@ export default function Home() {
               <strong className="text-gray-900 dark:text-white">YouTube</strong>{" "}
               <a
                 href="https://www.youtube.com/@ramjad"
-                className="text-blue-600 dark:text-blue-400 hover:underline"
+                className="text-blue-600 dark:text-gray-300 hover:underline dark:hover:text-white"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -99,7 +99,7 @@ export default function Home() {
               <strong className="text-gray-900 dark:text-white">X</strong>{" "}
               <a
                 href="https://x.com/theramjad"
-                className="text-blue-600 dark:text-blue-400 hover:underline"
+                className="text-blue-600 dark:text-gray-300 hover:underline dark:hover:text-white"
                 target="_blank"
                 rel="noopener noreferrer"
               >
