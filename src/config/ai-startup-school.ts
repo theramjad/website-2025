@@ -4,6 +4,7 @@
 
 export interface ProductConfig {
   productName: string;
+  productId: string; // Stripe product ID env var name
   siteName: string;
   siteDescription: string;
   hero: {
@@ -62,6 +63,7 @@ export interface ProductConfig {
 
 export const aiStartupSchoolConfig: ProductConfig = {
   productName: "AI Startup School",
+  productId: "STRIPE_PRODUCT_ID_AI_STARTUP_SCHOOL",
   siteName: "AI Startup School",
   siteDescription: "Learn to build AI-powered startups from idea to launch",
 

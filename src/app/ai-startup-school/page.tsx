@@ -1,6 +1,7 @@
 "use client";
 
 import {
+  Header,
   Hero,
   CourseComparison,
   Contents,
@@ -9,9 +10,22 @@ import {
   Footer,
 } from "@/components/landing";
 import { aiStartupSchoolConfig } from "@/config/ai-startup-school";
+import { api } from "@/utils/api";
 
 export default function AIStartupSchoolPage() {
   const config = aiStartupSchoolConfig;
+
+  const createCheckout = api.checkout.createCheckoutSession.useMutation({
+    onSuccess: (data) => {
+      if (data.url) {
+        window.location.href = data.url;
+      }
+    },
+    onError: (error) => {
+      console.error("Checkout error:", error);
+      alert("Failed to create checkout. Please try again.");
+    },
+  });
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -24,11 +38,19 @@ export default function AIStartupSchoolPage() {
   };
 
   const handleCTA = () => {
-    scrollToSection("contents");
+    createCheckout.mutate({
+      successUrl: `${window.location.origin}/ai-startup-school/success`,
+      cancelUrl: window.location.href,
+    });
   };
 
   return (
     <main>
+      <Header
+        siteName={config.siteName}
+        ctaText={config.pricing.ctaText}
+        onCtaClick={handleCTA}
+      />
       <Hero
         title={config.hero.title}
         highlight={config.hero.highlight}
