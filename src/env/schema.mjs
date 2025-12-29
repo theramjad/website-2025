@@ -33,6 +33,10 @@ export const serverEnv = {
  */
 export const clientSchema = z.object({
   NEXT_PUBLIC_URL: z.string(),
+
+  // PostHog
+  NEXT_PUBLIC_POSTHOG_KEY: z.string(),
+  NEXT_PUBLIC_POSTHOG_HOST: z.string(),
 });
 
 /**
@@ -43,4 +47,8 @@ export const clientSchema = z.object({
  */
 export const clientEnv = {
   NEXT_PUBLIC_URL: process.env.NEXT_PUBLIC_URL,
+
+  // PostHog
+  NEXT_PUBLIC_POSTHOG_KEY: process.env.NEXT_PUBLIC_POSTHOG_KEY,
+  NEXT_PUBLIC_POSTHOG_HOST: process.env.NEXT_PUBLIC_POSTHOG_HOST,
 };
