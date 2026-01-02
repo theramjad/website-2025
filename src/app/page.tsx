@@ -1,9 +1,10 @@
+import Navbar from "@/components/Navbar";
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-white dark:bg-neutral-800">
-      <div className="max-w-2xl mx-auto px-6 py-16">
-        <h1 className="text-4xl font-bold mb-8 text-gray-900 dark:text-white">Ray Amjad</h1>
-
+      <Navbar />
+      <div className="max-w-2xl mx-auto px-6 pb-16">
         <section className="mb-10">
           <h2 className="text-2xl font-semibold mb-4 text-gray-900 dark:text-white">Hey</h2>
           <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
