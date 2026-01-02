@@ -9,12 +9,20 @@ export default function Navbar() {
       >
         Ray Amjad
       </Link>
-      <Link
-        href="/press"
-        className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors"
-      >
-        Press
-      </Link>
+      <div className="flex gap-6">
+        <Link
+          href="/press"
+          className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors"
+        >
+          Press
+        </Link>
+        <Link
+          href="/about"
+          className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors"
+        >
+          About
+        </Link>
+      </div>
     </nav>
   );
 }
