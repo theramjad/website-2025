@@ -2,6 +2,12 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Purchase Complete - AI Startup School",
+  alternates: {
+    canonical: "/ai-startup-school/success",
+  },
+  robots: {
+    index: false,
+  },
 };
 
 export default function PurchaseComplete() {

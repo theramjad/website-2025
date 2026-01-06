@@ -9,8 +9,12 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://rayamjad.com"),
   title: "Ray Amjad",
   description: "Personal website of Ray Amjad",
+  alternates: {
+    canonical: "/",
+  },
 };
 
 export default function RootLayout({
