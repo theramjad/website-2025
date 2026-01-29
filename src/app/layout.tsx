@@ -24,8 +24,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} font-sans antialiased`}>
-        <TRPCProvider>{children}</TRPCProvider>
+      <body className={`${inter.variable} font-sans antialiased min-h-screen flex flex-col`}>
+        <TRPCProvider>
+          <div className="flex-1">
+            {children}
+          </div>
+          <footer className="text-center py-6 text-xs text-gray-400 dark:text-gray-500">
+            RAY AMJAD LTD (14506459)
+          </footer>
+        </TRPCProvider>
       </body>
     </html>
   );
