@@ -29,7 +29,7 @@ export default function RootLayout({
           <div className="flex-1">
             {children}
           </div>
-          <footer className="fixed bottom-0 left-0 right-0 text-center py-2 text-xs text-gray-300 dark:text-gray-600">
+          <footer className="fixed bottom-0 left-0 right-0 text-center py-2 text-xs text-gray-400 dark:text-gray-500">
             RAY AMJAD LTD (14506459)
           </footer>
         </TRPCProvider>
